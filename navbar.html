@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+	<style scoped>
+		body {
+		  margin: 0;
+		  font-family: Arial, Helvetica, sans-serif;
+		}
+		.topnav {
+		  overflow: hidden;
+		  background-color: #BF1E76;
+		}
+		.topnav a {
+		  float: left;
+		  display: block;
+		  color: #f2f2f2;
+		  text-align: center;
+		  padding: 14px 16px;
+		  text-decoration: none;
+		  font-size: 20px;
+		}
+		.topnav a:hover {
+		  background-color: #ddd;
+		  color: black;
+		}
+		.topnav a.active {
+		  background-color: #2D6BD1;
+		  color: white;
+		}
+		.topnav .icon {
+		  display: none;
+		}
+		
+		.header {
+			width: 100%;
+			height: 340px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="topnav" id="myTopnav">
+		<a href="#home" class="active">Home</a>
+		<a href="#package">Package</a>
+		<a href="#about">About</a>
+		<a href="LoginPage.html">Login</a>
+		<a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+	</div>
+
+	<!-- Content of the page -->
+
+	<!-- Script-->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myTopNav");
+			if (x.className === "topnav") {
+				x.className += " responsive";
+			} else {
+				x.className = "topnav";
+			}
+		}
+	</script>
+</body>
+</html>
